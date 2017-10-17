@@ -8,5 +8,5 @@ Link to the course: https://softuni.bg/trainings/1799/practical-teamwork-sept-20
 Participants:
 1) <a href="https://github.com/karabinata">karabinata</a>
 2) <a href="https://github.com/IvkaIvanova">IvkaIvanova</a>
-3) <a href="https://github.com/Bullsized">Bullsized</a>
-4) dimgog@abv.bg
+3) <a href="https://github.com/dimgog">dimgog</a>
+4) <a href="https://github.com/Bullsized">Bullsized</a>

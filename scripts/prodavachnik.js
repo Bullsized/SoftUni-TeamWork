@@ -1,5 +1,6 @@
 function startApp() {
 	showHideMenuLinks();
+<<<<<<< HEAD
     showHomeView();
 
 
@@ -9,18 +10,36 @@ function startApp() {
     $("#linkRegister").click(showRegisterView);
 	$("#linkLogout").click(logoutUser);
 
+=======
+	showHomeView();
+	
+    // Bind the navigation menu links
+    $("#linkHome").click(showHomeView);
+    $("#linkLogin").click(showLoginView);
+    $("#linkRegister").click(showRegisterView);
+    $("#linkLogout").click(logoutUser);
+
+>>>>>>> fcae5de1f12adfb35312ed4a0664bcdb4ec06cf8
     // Bind the form submit buttons
     $("#buttonLoginUser").click(loginUser);
     $("#buttonRegisterUser").click(registerUser);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fcae5de1f12adfb35312ed4a0664bcdb4ec06cf8
     function showView(viewName) {
         // Hide all views and show the selected view only
         $('main > section').hide();
         $('#' + viewName).show();
     }
+<<<<<<< HEAD
 	
     function showHideMenuLinks() {
+=======
+
+	    function showHideMenuLinks() {
+>>>>>>> fcae5de1f12adfb35312ed4a0664bcdb4ec06cf8
         $("#linkHome").show();
         if (sessionStorage.getItem('authToken') === null) {
             // No logged in user
@@ -35,7 +54,10 @@ function startApp() {
         }
     }
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> fcae5de1f12adfb35312ed4a0664bcdb4ec06cf8
     function showHomeView() {
         showView('viewHome');
     }
@@ -49,8 +71,13 @@ function startApp() {
         $('#formRegister').trigger('reset');
         showView('viewRegister');
     }
+<<<<<<< HEAD
 	
     // user/login
+=======
+
+	    // user/login
+>>>>>>> fcae5de1f12adfb35312ed4a0664bcdb4ec06cf8
     function loginUser() {
         const kinveyLoginUrl = "https://mock.backend.com/user/kid_rk/login";
         const kinveyAuthHeaders = {
@@ -118,4 +145,8 @@ function startApp() {
         showHideMenuLinks();
         showHomeView();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fcae5de1f12adfb35312ed4a0664bcdb4ec06cf8
