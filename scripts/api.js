@@ -10,7 +10,6 @@
             description: "Modded gaming console",
             publisher: "Pesho",
             datePublished: "2017-06-04",
-            price: 100
             price: 100,
             image: "./static/fuze-f1.png"
         }
@@ -130,6 +129,7 @@
             };
         }
     });
+<<<<<<< HEAD
 
 
     // Create advert
@@ -191,15 +191,18 @@
     $.mockjax(function (requestSettings) {
         if (requestSettings.url.match(/https:\/\/mock\.api\.com\/appdata\/kid_rk\/adverts\/(.+)/) &&
             requestSettings.method === "PUT") {
+=======
     // Load single advert
     $.mockjax(function (requestSettings) {
         if (requestSettings.url.match(/https:\/\/mock\.api\.com\/appdata\/kid_rk\/adverts\/(.+)/) &&
             requestSettings.method === "GET") {
+>>>>>>> Detailed-View
             let advertId = Number(requestSettings.url.match(/https:\/\/mock\.api\.com\/appdata\/kid_rk\/adverts\/(.+)/)[1]);
             return {
                 response: function (origSettings) {
                     if (requestSettings.headers["Authorization"].includes("Kinvey mock_token")) {
                         let advert = adverts.filter(a => a._id === advertId);
+<<<<<<< HEAD
                         let data = requestSettings.data;
                         if (advert.length > 0) {
                             advert = advert[0];
@@ -210,7 +213,9 @@
                             this.responseText = advert;
                         }
                         this.responseText = {};
+=======
                         this.responseText = advert.shift();
+>>>>>>> Detailed-View
                     } else {
                         this.status = 403;
                         this.responseText = "You are not authorized";
@@ -219,4 +224,8 @@
             };
         }
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> Detailed-View
 })();
