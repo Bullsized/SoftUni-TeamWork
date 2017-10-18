@@ -16,7 +16,6 @@ function startApp() {
     $("#buttonCreateAd").click(createAdvert);
     $("#buttonEditAd").click(editAdvert);
 
-
     const kinveyBaseUrl = "https://mock.api.com/";
     const kinveyAppKey = "kid_rk";
     const kinveyAppSecret = "736804a668";
@@ -59,11 +58,11 @@ function startApp() {
         $('#formRegister').trigger('reset');
         showView('viewRegister');
     }
+
     function showCreateAdView() {
         $('#formCreateAd').trigger('reset');
         showView('viewCreateAd');
     }
-
 
     // user/login
     function loginUser() {
@@ -191,6 +190,8 @@ function startApp() {
         }
     }
 
+<<<<<<< HEAD
+=======
 
 
     function displayAdvert(advertId){
@@ -228,6 +229,7 @@ function startApp() {
         }
     }
 
+>>>>>>> Detailed-View
     // advertisement/create
     function createAdvert() {
         const kinveyAuthHeaders = {
@@ -347,5 +349,4 @@ function startApp() {
             showInfo('Advertisement edited.');
         }
     }
-
 }
